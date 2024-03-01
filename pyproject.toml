@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wagtail-modeltranslation"
-version = "0.14.1"
+version = "0.15.0-alpha"
 license = "New BSD"
 authors = ["InfoPortugal S.A. <suporte24@infoportugal.pt>"]
 maintainers = ["InfoPortugal S.A. <suporte24@infoportugal.pt>"]
@@ -11,15 +11,13 @@ keywords = ["django", "wagtail", "translation", "i18n"]
 include = [
   "*.txt",
   "*.rst",
-  "docs",
-  "*.rst",
   "conf.py",
+  "docs",
   "wagtail_modeltranslation/static/**",
   "wagtail_modeltranslation/management/**",
   "wagtail_modeltranslation/templatetags/**",
   "wagtail_modeltranslation/templates/**",
 ]
-
 exclude = ["*.pyc", "*.DS_Store"]
 classifiers = [
   'Programming Language :: Python :: 3',
@@ -27,6 +25,7 @@ classifiers = [
   'Programming Language :: Python :: 3.9',
   'Programming Language :: Python :: 3.10',
   'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
   'Operating System :: OS Independent',
   'Environment :: Web Environment',
   'Intended Audience :: Developers',
@@ -36,9 +35,9 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Django = ">= 3.2"
-wagtail = ">=4.0,<=6.0"
+django = ">=3.2"
 django-modeltranslation = ">=0.17"
+wagtail = ">=4.0,<=7.0"
 
 [tool.poetry.dev-dependencies]
 bump2version = "^1.0.1"
