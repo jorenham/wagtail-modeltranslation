@@ -53,7 +53,7 @@ function getStreamFieldHeader(currentStreamField) {
 
 function getStreamFieldName(currentStreamField) {
 	// returns the streamfield name and language code as '{name}_{lang};
-	const sectionId = $(temp1).attr('id')
+	const sectionId = $(currentStreamField).attr('id')
 	// sectionId.split('-')[-2]
 	return sectionId.split('-').slice(-2)[0];
 }
